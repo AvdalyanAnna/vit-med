@@ -10,8 +10,8 @@ var swiper = new Swiper(".doctors__list", {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
-      slidesPerView: 3,
+    769: {
+      slidesPerView: 2,
       spaceBetween: 24,
     },
     1280: {
@@ -27,5 +27,19 @@ var swiper = new Swiper(".feedback__list", {
   navigation: {
     nextEl: ".feedback__list .next",
     prevEl: ".feedback__list .prev",
+  },
+  breakpoints: {
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
   },
 });

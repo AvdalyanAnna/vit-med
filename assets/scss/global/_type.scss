@@ -1,0 +1,69 @@
+//
+// Headings
+//
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, .h6, h6{
+  font-family: $font-meri;
+}
+
+h1,
+.h1 {
+	font-weight: bold;
+  font-size: 60px;
+  line-height: 120%;
+}
+
+
+h2, .h2 {
+  font-weight: bold;
+  font-size: 44px;
+  line-height: 120%;
+}
+h3, .h3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 130%;
+}
+h4, .h4 {
+  font-size: 20px;
+  line-height: 130%;
+  font-weight: 700;
+}
+h5, .h5 {
+  font-size: 20px;
+}
+h6, .h6 {
+  font-size: 18px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+p{
+  font-size: 16px;
+  line-height: 160%;  
+  font-family: $font-fira;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+@include media-breakpoint-down(sm) {
+
+  h1, .h1{
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  h2, .h2{
+    font-size: 24px;
+  }
+
+  h3, .h3{
+    font-size: 24px;
+  }
+  h4, .h4{
+    line-height: 135%;
+  }
+  p{
+    font-size: 14px;
+  }
+}

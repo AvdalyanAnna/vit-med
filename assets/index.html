@@ -8,7 +8,7 @@
 "logged": "false"
 })
 
-<div class="intro">
+<div id="intro" class="intro">
     <div class="wrapper">
         <div class="row">
             <div class="col-lg-6">
@@ -32,8 +32,8 @@
 <div class="info">
     <div class="wrapper">
         <div class="row">
-            <div class="col-4">
-                <div class=" info-cart__big">
+            <div class="col-md-4">
+                <div class="info-cart info-cart__big">
                     <div class="info-cart__big-img">
                         <img src="img/info-cart__big.png" alt="info-cart__big">
                     </div>
@@ -43,9 +43,9 @@
                     </p>
                 </div>
             </div>
-            <div class="col-8">
+            <div class="col-md-8">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="info-cart info-cart__primary">
                             <div class="info-numbers">1700+</div>
                             <p class="info-desc">Более <b>1700</b> детям ежегодно улучшают зрение</p>
@@ -66,7 +66,7 @@
                                 Япония, США, Россия, Южная Корея </p>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-md-6">
                         <div class="info-cart">
                             <div class="info-cart__svg">
                                 <svg width="82" height="67" viewBox="0 0 82 67" fill="none"
@@ -113,7 +113,7 @@
     <div class="wrapper">
         <div class="med-center__inner">
             <div class="row">
-                <div class="col-lg-6 col-md-9 med-center__text">
+                <div class="col-lg-6 col-md-12 med-center__text">
                     <h3 class="med-center__title"> Центр лечения зрения «Вита-Мед»</h3>
                     <p class="med-center__desc">Это команда лучших специалистов с многолетней успешной практикой.</p>
                     <p class="med-center__desc">Наши врачи не только лечат, они помогают сохранить здоровье и находят
@@ -157,7 +157,7 @@
     </div>
 </section>
 
-<section class="doctors">
+<section id="doctors" class="doctors">
     <div class="wrapper">
         <h2 class="title mb-5">Наши врачи:</h2>
         <div class="doctors__inner">
@@ -332,12 +332,12 @@
     </div>
 </section>
 
-<section class="service">
+<section id="service" class="service">
     <div class="wrapper">
         <div class="service__inner">
-            <h2 class="title mb-10">Наши услуги</h2>
+            <h2 class="title mb-md-10 mb-5">Наши услуги</h2>
             <div class="row">
-                <div class="col-6">
+                <div class="col-md-6">
                     <ul class="service-list">
                         <li class="service-item">
                             <div class="service-icon"></div>
@@ -383,7 +383,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-6">
+                <div class="col-md-6">
                     <div class="service-item-big__inner">
                         <div class="service-item-big">
                             <div class="service-icon"></div>
@@ -415,7 +415,7 @@
         </div>
     </div>
 </section>
-<section class="stock">
+<section id="stock" class="stock">
     <div class="wrapper">
         <div class="stock__inner">
             <div class="stock__content">
@@ -465,7 +465,7 @@
         <div class="reference__inner">
             <div class="row">
                 <div class="col-lg-6">
-                    <h2 class="title mb-8">Справка</h2>
+                    <h2 class="title mb-md-8 mb-4">Справка</h2>
                     <p class="desc">Глазная патология у детей очень многообразна и зачастую неуловима для не
                         специалиста. Для того, чтобы убедиться в том, что у вашего малыша все в порядке со зрением, а в
                         случае отклонений от нормы своевременно и точно их распознать, не задерживайте свой визит к
@@ -483,7 +483,7 @@
                         Именно в детстве можно справиться с большинством заболеваний, <b>не прибегая к хирургическому
                             вмешательству.</b></p>
                 </div>
-                <div class="col-6 d-lg-block">
+                <div class="col-lg-6">
                     <div class="reference__img">
                         <img src="img/reference.png" class="reference__img-1" alt="reference">
                         <img src="img/reference-bg.png" class="reference__img-2" alt="reference">
@@ -516,7 +516,7 @@
                 </div>
                 <div class="col-lg-9">
                     <div class="row">
-                        <div class="col-4">
+                        <div class="col-md-4 col-6 ">
                             <div class="equipment-item">
                                 <div class="equipment-icon"></div>
                                 <div class="equipment-content">
@@ -532,7 +532,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-md-4 col-6">
                             <div class="equipment-item">
                                 <div class="equipment-icon"></div>
                                 <div class="equipment-content">
@@ -548,21 +548,28 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-4">
-                            <div class="equipment-item">
-                                <div class="equipment-icon"></div>
-                                <div class="equipment-content">
-                                    <div class="equipment-text">Оптический когерентный томограф «Optovue»</div>
-                                    <a href="#" class="equipment-more">Нажмите на меня!</a>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-12 col-6">
+                                    <div class="equipment-item">
+                                        <div class="equipment-icon"></div>
+                                        <div class="equipment-content">
+                                            <div class="equipment-text">Оптический когерентный томограф «Optovue»</div>
+                                            <a href="#" class="equipment-more">Нажмите на меня!</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-6">
+                                    <div class="equipment-item">
+                                        <div class="equipment-icon"></div>
+                                        <div class="equipment-content">
+                                            <div class="equipment-text">Ортокератология или ОК-терапия</div>
+                                            <a href="#" class="equipment-more">Нажмите на меня!</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="equipment-item">
-                                <div class="equipment-icon"></div>
-                                <div class="equipment-content">
-                                    <div class="equipment-text">Ортокератология или ОК-терапия</div>
-                                    <a href="#" class="equipment-more">Нажмите на меня!</a>
-                                </div>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -619,7 +626,7 @@
     </div>
 </section>
 
-<section class="prices">
+<section id="prices" class="prices">
     <div class="wrapper">
         <div class="prices__inner">
             <div class="prices__head">
@@ -728,7 +735,7 @@
     </div>
 </section>
 
-<section class="feedback">
+<section id="feedback" class="feedback">
     <div class="wrapper">
         <div class="feedback__inner">
             <h2 class="feedback-title">Отзывы пациентов:</h2>
@@ -856,7 +863,7 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer id="contact" class="footer">
     <div class="wrapper">
         <div class="row">
             <div class="col-lg-5 col-md-7">

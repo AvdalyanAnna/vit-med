@@ -516,7 +516,6 @@ a {
 }
 
 .med-center {
-	padding-bottom: 97px;
 
 	&__inner {
 		min-height: 565px;
@@ -573,7 +572,7 @@ a {
 }
 
 .doctors {
-	padding-bottom: 70px;
+	padding-top: 97px;
 
 	&__item {
 		color: #000000;
@@ -719,6 +718,8 @@ a {
 }
 
 .service {
+	padding-top: 97px;
+
 	&__inner {}
 
 	&-list {
@@ -821,8 +822,8 @@ a {
 }
 
 .stock {
-	margin-top: 123px;
-	padding-bottom: 130px;
+
+	padding: 120px 0;
 
 	&__inner {
 		background: linear-gradient(270deg, #47C8FF -4.68%, #51B6F3 100%);
@@ -1056,8 +1057,8 @@ a {
 .sing {
 	position: relative;
 	margin: 22px 0;
-	padding-bottom: 152px;
 	width: 100%;
+	padding-bottom: 52px;
 
 
 	&__inner {
@@ -1162,6 +1163,8 @@ a {
 }
 
 .prices {
+	padding-top: 100px;
+
 	&__inner {
 		background: #FFFFFF;
 		border-radius: 15px;
@@ -1263,7 +1266,7 @@ a {
 }
 
 .feedback {
-	margin: 80px 0 102px;
+	padding: 97px 0 102px;
 
 	&-title {
 		font-weight: 300;
@@ -1563,8 +1566,7 @@ a {
 	}
 
 	.stock {
-		margin-top: 83px;
-		padding-bottom: 83px;
+		padding: 83px 0;
 	}
 
 	.service-list {
@@ -1814,7 +1816,7 @@ a {
 	}
 
 	.med-center {
-		padding-bottom: 80px;
+
 
 		&__btns {
 			flex-wrap: wrap;
@@ -1826,7 +1828,13 @@ a {
 		}
 	}
 
+	.doctors {
+		padding-top: 80px;
+	}
+
 	.service {
+		padding-top: 80px;
+
 		&-list {
 			gap: 16px;
 			margin-bottom: 16px;
@@ -1892,7 +1900,7 @@ a {
 	}
 
 	.sing {
-		padding-bottom: 60px;
+		padding-bottom: 0;
 
 		&__inner {
 			padding: 35px 15px;

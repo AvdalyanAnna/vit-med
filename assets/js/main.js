@@ -113,14 +113,27 @@ $(function () {
 
 function onScroll(event) {
   var scrollPos = $(document).scrollTop();
-  $(".header__menu a").each(function () {
+  $(" header__inner .header__menu a").each(function () {
     var currLink = $(this);
     var refElement = $(currLink.attr("href"));
     if (
       refElement.position().top <= scrollPos &&
       refElement.position().top + refElement.height() > scrollPos
     ) {
-      $(".header__menu a").removeClass("active");
+      $(" header__inner .header__menu a").removeClass("active");
+      currLink.addClass("active");
+    } else {
+      currLink.removeClass("active");
+    }
+  });
+  $(".header-mobile__menu .header__menu a").each(function () {
+    var currLink = $(this);
+    var refElement = $(currLink.attr("href"));
+    if (
+      refElement.position().top <= scrollPos &&
+      refElement.position().top + refElement.height() > scrollPos
+    ) {
+      $(".header-mobile__menu .header__menu a").removeClass("active");
       currLink.addClass("active");
     } else {
       currLink.removeClass("active");

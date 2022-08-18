@@ -68,7 +68,7 @@ a {
 	color: #FFFFFF;
 	border: none;
 	outline: none;
-	display: flex;
+	display: inline-flex;
 	gap: 10px;
 	cursor: pointer;
 	transition: 0.3s;
@@ -174,14 +174,13 @@ a {
 	}
 
 	&__top {
-		height: 97px;
 		background-color: #fff;
 		border-bottom: 1px solid #EBEBEB;
 
 		&-wrapper {
 			display: flex;
 			justify-content: space-between;
-			align-items: end;
+			align-items: center;
 			padding: 16px 0;
 			gap: 45px;
 		}
@@ -724,8 +723,14 @@ a {
 
 	&-list {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);
+		grid-template-columns: repeat(4, 1fr);
 		gap: 30px;
+
+		@media screen and (max-width:1024px) {
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+
 	}
 
 	&-item {
@@ -1269,9 +1274,7 @@ a {
 .feedback {
 	padding: 97px 0 102px;
 
-	&__arrow.swiper-arrow {
-		top: 100px;
-	}
+
 
 	&-title {
 		font-weight: 300;
@@ -1299,6 +1302,7 @@ a {
 
 	&__img {
 		img {
+			min-width: 36px;
 			width: 36px;
 			height: 36px;
 			border-radius: 50%;
@@ -1312,6 +1316,12 @@ a {
 			font-weight: 300;
 			font-size: 14px;
 			line-height: 16px;
+			height: 77px;
+			display: -webkit-box;
+			-webkit-line-clamp: 5;
+			-webkit-box-orient: vertical;
+			overflow: hidden;
+			text-overflow: ellipsis;
 			color: #000000;
 			margin-bottom: 9px;
 		}
@@ -1445,7 +1455,23 @@ a {
 	max-width: 1140px;
 }
 
-@media screen and (max-width:1580px) {
+.header__logo {
+	.logo-small {
+		display: none;
+	}
+}
+
+@media screen and (max-width:1852px) {
+	.header__logo {
+		.logo-small {
+			display: block;
+		}
+
+		.logo-big {
+			display: none;
+		}
+	}
+
 	.wrapper {
 		max-width: 1140px;
 	}
@@ -1630,7 +1656,7 @@ a {
 	}
 
 	.service-list {
-		grid-template-columns: 1fr;
+		grid-template-columns: 1fr 1fr;
 		gap: 23px;
 	}
 
@@ -2008,6 +2034,11 @@ a {
 	.contact {
 		padding: 35px;
 	}
+
+	.service-list {
+		grid-template-columns: 1fr;
+		gap: 23px;
+	}
 }
 
 @media screen and (max-width: 359px) {
@@ -2132,4 +2163,18 @@ h4 {
 	font-size: 22px;
 	line-height: 130%;
 	margin: 20px 0;
+}
+
+.modal__body {
+	.feedback__text p {
+		height: auto;
+		display: block;
+		-webkit-line-clamp: inherit;
+		-webkit-box-orient: inherit;
+		text-overflow: inherit;
+	}
+}
+
+.feedback__item:hover .equipment-more::before {
+	width: 100%;
 }

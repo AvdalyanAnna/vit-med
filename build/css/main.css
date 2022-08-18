@@ -9729,7 +9729,8 @@ a {
         left: 32px; }
       .service-item-big__inner {
         padding-right: 13px;
-        position: relative; }
+        position: relative;
+        display: none; }
         .service-item-big__inner::before, .service-item-big__inner::after {
           content: '';
           position: absolute;
@@ -10126,6 +10127,8 @@ a {
 
 .feedback {
   padding: 97px 0 102px; }
+  .feedback__arrow.swiper-arrow {
+    top: 100px; }
   .feedback-title {
     font-weight: 300;
     font-size: 46px;
@@ -10156,12 +10159,6 @@ a {
       font-size: 14px;
       line-height: 16px;
       color: #000000;
-      height: 77px;
-      display: -webkit-box;
-      -webkit-line-clamp: 5;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      text-overflow: ellipsis;
       margin-bottom: 9px; }
   .feedback__title {
     font-weight: 400;
@@ -10628,3 +10625,85 @@ a {
         flex-direction: column;
     -ms-flex-align: self-start;
         align-items: self-start; } }
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  background: rgba(34, 34, 34, 0.6);
+  overflow: auto;
+  box-sizing: border-box; }
+  .modal-inner {
+    width: 100%;
+    height: 100%;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .modal__container {
+    margin: auto auto;
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 4px;
+    max-height: 95vh;
+    overflow: auto; }
+    .modal__container img {
+      max-width: 100%;
+      margin: 10px 0; }
+    @media screen and (max-width: 480px) {
+      .modal__container {
+        height: 100vh;
+        max-height: initial; } }
+    .modal__container::-webkit-scrollbar {
+      width: 5px;
+      margin-right: 20px; }
+    .modal__container::-webkit-scrollbar-track {
+      background: #ffffff;
+      border-radius: 5px; }
+    .modal__container::-webkit-scrollbar-thumb {
+      background: #47C8FF;
+      border-radius: 5px; }
+    .modal__container .close {
+      background: url("../img/svg/close.svg") no-repeat center center;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      cursor: pointer; }
+  .modal__header {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px; }
+  .modal__body {
+    font-size: 16px;
+    line-height: 160%;
+    font-family: "Roboto", sans-serif; }
+  .modal__title {
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 120%;
+    color: #000000; }
+
+.list {
+  list-style: disc;
+  padding-left: 1rem;
+  margin: 10px 0;
+  font-weight: 300; }
+
+h4 {
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 130%;
+  margin: 20px 0; }

@@ -32,8 +32,8 @@ var swiper = new Swiper(".feedback__list", {
   slidesPerView: 1,
   spaceBetween: 24,
   navigation: {
-    nextEl: ".feedback__list .next",
-    prevEl: ".feedback__list .prev",
+    nextEl: ".feedback .next",
+    prevEl: ".feedback .prev",
   },
   breakpoints: {
     640: {
@@ -79,7 +79,7 @@ $(function () {
   $(document).on("scroll", onScroll);
 
   //smoothscroll
-  $('a[href^="#"]').on("click", function (e) {
+  $('header a[href^="#"]').on("click", function (e) {
     e.preventDefault();
     $(document).off("scroll");
 
@@ -140,3 +140,22 @@ function onScroll(event) {
     }
   });
 }
+
+$(function () {
+  $(".modal .modal__container").on("click", function (e) {
+    e.stopPropagation();
+  });
+
+  $(".open__modal").on("click", function (e) {
+    e.preventDefault();
+    const open = $(this).data("open");
+    $(open).fadeIn();
+  });
+
+  $(".modal .close, .modal, .modal-close ").on("click", function (e) {
+    e.preventDefault();
+    $(".modal").fadeOut(function () {
+      $("body").css("overflow", "auto");
+    });
+  });
+});

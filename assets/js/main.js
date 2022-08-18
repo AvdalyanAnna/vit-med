@@ -106,17 +106,10 @@ $(function () {
       );
   });
 
-  $('a[href^="#sing"]').on("click", function (e) {
+  $('a[href="#sing"]').on("click", function (e) {
     e.preventDefault();
     $(document).off("scroll");
-
-    $("a").each(function () {
-      $(this).removeClass("active");
-    });
-    $(this).addClass("active");
-
-    var target = this.hash,
-      menu = target;
+    var target = this.hash;
     $target = $(target);
     $("html, body")
       .stop()
@@ -128,7 +121,6 @@ $(function () {
         "swing",
         function () {
           window.location.hash = target;
-          $(document).on("scroll", onScroll);
         }
       );
   });

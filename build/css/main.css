@@ -9256,6 +9256,7 @@ a {
   .header.kmg-fix {
     top: -97px; }
   .header__top {
+    height: 97px;
     background-color: #fff;
     border-bottom: 1px solid #EBEBEB; }
     .header__top-wrapper {

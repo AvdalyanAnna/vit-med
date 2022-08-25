@@ -9423,6 +9423,11 @@ a {
   font-size: 50px;
   line-height: 100%;
   color: #000000; }
+  .intro-title__sub {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000; }
 
 .intro-content {
   margin: 75px 0;
@@ -9433,7 +9438,7 @@ a {
   -ms-flex-align: self-start;
       align-items: self-start;
   gap: 48px;
-  max-width: 505px;
+  max-width: 575px;
   width: 100%; }
 
 .intro-img {
@@ -9582,7 +9587,7 @@ a {
     width: 100%; }
 
 .doctors {
-  padding-top: 97px; }
+  padding: 97px 0 90px; }
   .doctors__item {
     color: #000000;
     background: #FFFFFF;
@@ -9780,7 +9785,8 @@ a {
     color: #49C7FE; }
 
 .stock {
-  padding: 120px 0; }
+  padding: 120px 0;
+  position: relative; }
   .stock__inner {
     background: linear-gradient(270deg, #47C8FF -4.68%, #51B6F3 100%);
     border-radius: 15px;
@@ -9836,6 +9842,20 @@ a {
     font-size: 36px;
     line-height: 130%;
     margin-bottom: 20px; }
+  .stock__desc {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 130%;
+    margin-bottom: 20px; }
+  .stock__text-info {
+    position: absolute;
+    max-width: 445px;
+    height: 100px;
+    bottom: -120px;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+    color: #1C1B1F; }
   .stock__price {
     padding: 10px 27px;
     background: #FFFFFF;
@@ -9879,19 +9899,19 @@ a {
       margin-bottom: 0; }
   .reference__img {
     max-width: 750px;
-    min-height: 743px;
+    min-height: 550px;
     position: relative; }
     .reference__img-1 {
       position: absolute;
       right: -86px;
-      top: 22px;
-      z-index: 2; }
+      top: -50px;
+      z-index: 1; }
     .reference__img-2 {
       position: absolute;
       left: -25px;
       bottom: -189px;
       max-width: 415px;
-      z-index: 1; }
+      z-index: 0; }
 
 .equipment {
   padding: 100px 0 120px; }
@@ -10185,7 +10205,12 @@ a {
   .feedback__logo {
     position: absolute;
     top: 9px;
-    right: 20px; }
+    right: 20px;
+    width: 34px;
+    height: 20px; }
+    .feedback__logo img {
+      max-width: 100%;
+      height: auto; }
 
 .footer {
   background-image: url(../img/footer.png);

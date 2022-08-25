@@ -363,6 +363,12 @@ a {
 		font-size: 50px;
 		line-height: 100%;
 		color: #000000;
+		&__sub{
+			font-weight: 300;
+			font-size: 20px;
+			line-height: 130%;
+			color: #000000;
+		}
 	}
 
 	&-content {
@@ -371,7 +377,7 @@ a {
 		flex-direction: column;
 		align-items: self-start;
 		gap: 48px;
-		max-width: 505px;
+		max-width: 575px;
 		width: 100%;
 	}
 
@@ -576,7 +582,7 @@ a {
 }
 
 .doctors {
-	padding-top: 97px;
+	padding: 97px 0 90px;
 
 	&__item {
 		color: #000000;
@@ -835,7 +841,7 @@ a {
 .stock {
 
 	padding: 120px 0;
-
+	position: relative;
 	&__inner {
 		background: linear-gradient(270deg, #47C8FF -4.68%, #51B6F3 100%);
 		border-radius: 15px;
@@ -900,6 +906,23 @@ a {
 		margin-bottom: 20px;
 	}
 
+	&__desc {
+		font-weight: 300;
+		font-size: 20px;
+		line-height: 130%;
+		margin-bottom: 20px;
+	}
+	&__text-info{
+		position: absolute;
+		max-width: 445px;
+		height: 100px;
+		bottom: -120px;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 130%;
+		color: #1C1B1F;
+	}
+
 	&__price {
 		padding: 10px 27px;
 		background: #FFFFFF;
@@ -951,14 +974,14 @@ a {
 
 	&__img {
 		max-width: 750px;
-		min-height: 743px;
+		min-height: 550px;
 		position: relative;
 
 		&-1 {
 			position: absolute;
 			right: -86px;
-			top: 22px;
-			z-index: 2;
+			top: -50px;
+			z-index: 1;
 		}
 
 		&-2 {
@@ -966,7 +989,7 @@ a {
 			left: -25px;
 			bottom: -189px;
 			max-width: 415px;
-			z-index: 1;
+			z-index: 0;
 		}
 	}
 }
@@ -1354,6 +1377,12 @@ a {
 		position: absolute;
 		top: 9px;
 		right: 20px;
+		width: 34px;
+		height: 20px;
+		img{
+			max-width: 100%;
+			height: auto;
+		}
 	}
 
 }

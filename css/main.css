@@ -9620,7 +9620,8 @@ a {
       .doctors__info-img img {
         width: 128px;
         height: 128px;
-        border-radius: 50%; }
+        border-radius: 50%;
+        object-fit: cover; }
     .doctors__info-title {
       font-weight: 500;
       font-size: 18px;

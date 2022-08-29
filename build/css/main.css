@@ -9958,7 +9958,7 @@ a {
     line-height: 160%;
     color: #49C7FE; }
   .equipment-icon-big {
-    width: 89px;
+    min-width: 89px;
     height: 68px;
     background-image: url(../img/equipment-icon-big.svg);
     margin-bottom: 41px; }
@@ -10017,6 +10017,8 @@ a {
       line-height: 130%;
       color: #FFFFFF;
       margin-bottom: 17px; }
+      .sing-form .desc span {
+        white-space: nowrap; }
     .sing-form__item {
       margin-bottom: 30px;
       max-width: 350px;

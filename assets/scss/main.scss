@@ -1056,7 +1056,7 @@ a {
 	}
 
 	&-icon-big {
-		width: 89px;
+		min-width: 89px;
 		height: 68px;
 		background-image: url(../img/equipment-icon-big.svg);
 		margin-bottom: 41px;
@@ -1132,6 +1132,9 @@ a {
 			line-height: 130%;
 			color: #FFFFFF;
 			margin-bottom: 17px;
+			span{
+				white-space: nowrap;
+			}
 		}
 
 		&__item {
